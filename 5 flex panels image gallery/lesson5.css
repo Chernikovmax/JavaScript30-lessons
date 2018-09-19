@@ -1,0 +1,85 @@
+html {
+  box-sizing: border-box;
+  background: rgb(255, 210, 19);
+  font-family: 'Comic Sans MS';
+  font-size: 20px;
+  font-weight: 200;
+}
+
+body {
+  padding: 0;
+  margin: 0;
+}
+
+.panels {
+  min-height: 100vh;
+  overflow: hidden;
+  display: flex;
+}
+
+.panel {
+  background: rgb(66, 195, 172);
+  box-shadow: inset 0 0 0 5px rgba(249, 204, 47, 0.23);
+  color: #fff;
+  text-align: center;
+  align-items: center;
+  transition:
+    font-size 0.7s cubic-bezier(0.61, -0.19, 0.7, -0.11),
+    flex 0.7s cubic-bezier(0.61, -0.19, 0.7, -0.11),
+    background 0.2s;
+  font-size: 30px;
+  background-size: cover;
+  background-position: center;
+  flex: 1;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+}
+
+.panel1 {
+  background-image: url(../images/Alexandra/photo1.jpg);
+}
+.panel2 {
+  background-image: url(../images/Alexandra/photo2.jpg);
+}
+.panel3 {
+  background-image: url(../images/Alexandra/photo3.jpg);
+}
+.panel4 {
+  background-image: url(../images/Alexandra/photo4.jpg);
+}
+.panel5 {
+  background-image: url(../images/Alexandra/photo5.jpg);
+}
+
+.panel > * {
+  margin: 0;
+  width: 100%;
+  transition: transform 0.5s;
+  flex: 1 0 auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.panel.open {
+  flex: 5;
+  font-size: 40px;
+}
+
+.panel > *:first-child {
+  transform: translateY(-100%);
+  font-size: 1em;
+}
+
+.panel.open-active > *:first-child {transform: translateY(0);}
+
+.panel > *:nth-of-type(2) {font-size: 2em;}
+
+.panel > *:last-child {
+  transform: translateY(100%);
+  font-size: 1em;
+}
+
+.panel.open-active > *:last-child {transform: translateY(0);}
