@@ -44,12 +44,16 @@ body {
 }
 
 .player__button {
-  width: 10%;
+  width: 8%;
   border: none;
   background-color: transparent;
   color: #fff;
   outline: none;
   cursor: pointer;
+}
+
+.fullscreen {
+  width: 5%
 }
 
 .toggle {
