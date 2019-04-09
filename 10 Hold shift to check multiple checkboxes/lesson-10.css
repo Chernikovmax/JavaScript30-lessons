@@ -4,6 +4,7 @@ body {
   background-color: rgb(242, 180, 21);
   display: flex;
   justify-content: center;
+  align-items: center;
 }
 
 input:checked + p {
@@ -15,8 +16,7 @@ input:checked + p {
   position: relative;
   display: flex;
   flex-direction: column;
-  top: 20%;
-  height: 400px;
+  height: auto;
   width: 300px;
   background-color: rgb(236, 244, 243);
 }
