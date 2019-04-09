@@ -48,13 +48,10 @@ dogs.forEach(dog => {
 // Counting
 console.count('Wes')
 console.count('Max')
-console.count('Huyaks')
 console.count('Steve')
 console.count('Michelle')
 console.count('Mike')
 console.count('Nike')
-console.count('Huyayk')
-console.count('Jopa')
 
 // timing
 console.time('fetching data');
