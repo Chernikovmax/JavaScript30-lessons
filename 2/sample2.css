@@ -1,0 +1,76 @@
+body {
+  padding: 0;
+  margin: 0;
+  font-family: 'Roboto Condensed';
+  color: #ffc600;
+}
+
+.clock-face {
+  height: 100px;
+  width: 100px;
+  border: 10px solid #fff;
+  border-radius: 50%;
+  }@font-face {
+  font-family: 'Roboto Condensed';
+  src: url('../fonts/roboto-condensed.ttf');
+}
+
+
+.main-part {
+  height: 100vh;
+  width: auto;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(88, 43, 18, 0.9);
+}
+
+.clock-face {
+  position: relative;
+  left: 50%;
+  height: 200px;
+  width: 200px;
+  border: 10px solid #fff;
+  border-radius: 50%;
+}
+
+.arrows-clumping {
+  width: 5%;
+  height: 5%;
+  left: 48%;
+  background-color: #fff;
+  border-radius: 50%;
+  position: absolute;
+  z-index: 10;
+}
+
+.hand {
+  width: 45%;
+  height: 6px;
+  background: #000;
+  position: absolute;
+  top: 50%;
+  transform-origin: 100%;
+  transform: rotate(90deg);
+  transition: all 0.05s;
+  transition-timing-function: cubic-bezier(0.1, 2.7, 0.58, 1);
+  z-index: 3;
+}
+
+.second-hand {
+  height: 2px;
+  margin-left: 5%;
+  background-color: rgb(233, 85, 30);
+}
+
+.min-hand {
+  height: 4px;
+  margin-left: 5%;
+  background-color: rgb(25, 29, 21);
+}
+
+.hour-hand {
+  width: 40%;
+  margin-left: 10%;
+}
