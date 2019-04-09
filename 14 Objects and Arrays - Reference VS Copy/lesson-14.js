@@ -79,4 +79,4 @@ console.log(wes);
 
 const dev = Object.assign({}, wes);
 
-const dev2 = JSON.parse(JSON.stringfy(wes));
+const dev2 = JSON.parse(JSON.stringify(wes));
