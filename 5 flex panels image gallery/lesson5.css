@@ -11,6 +11,10 @@ body {
   margin: 0;
 }
 
+span {
+  color: #f98d0c;
+}
+
 .panels {
   min-height: 100vh;
   overflow: hidden;
@@ -38,19 +42,19 @@ body {
 }
 
 .panel1 {
-  background-image: url(../images/Alexandra/photo1.jpg);
+  background-image: url(../images/mountains/1.jpg);
 }
 .panel2 {
-  background-image: url(../images/Alexandra/photo2.jpg);
+  background-image: url(../images/mountains/2.jpg);
 }
 .panel3 {
-  background-image: url(../images/Alexandra/photo3.jpg);
+  background-image: url(../images/mountains/3.jpg);
 }
 .panel4 {
-  background-image: url(../images/Alexandra/photo4.jpg);
+  background-image: url(../images/mountains/4.jpg);
 }
 .panel5 {
-  background-image: url(../images/Alexandra/photo5.jpg);
+  background-image: url(../images/mountains/5.jpg);
 }
 
 .panel > * {
